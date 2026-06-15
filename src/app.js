@@ -2,8 +2,17 @@
   const { useEffect, useState } = React;
   const posters = window.POSTERS || [];
 
+  function getPosterIdFromLocation() {
+    const hashId = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    if (hashId) {
+      return hashId;
+    }
+
+    return decodeURIComponent(window.location.pathname.replace(/^\/|\/$/g, ""));
+  }
+
   function getPosterFromHash() {
-    const id = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+    const id = getPosterIdFromLocation();
     return posters.find((poster) => poster.id === id) || posters[0];
   }
 
@@ -24,7 +33,7 @@
 
     function selectPoster(poster) {
       setActivePoster(poster);
-      window.history.replaceState(null, "", `#${encodeURIComponent(poster.id)}`);
+      window.history.replaceState(null, "", `/${encodeURIComponent(poster.id)}/`);
     }
 
     if (!activePoster) {

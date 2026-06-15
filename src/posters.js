@@ -9,19 +9,19 @@ window.POSTERS = [
     author: "김준호",
     images: [
       {
-        src: "assets/poster.jpeg",
+        src: "/assets/poster.jpeg",
         width: 745,
         height: 1054,
         alt: "2026 SW중심대학 에세이 공모전 장려상 김준호 수상작 포스터 1",
       },
       {
-        src: "assets/sw-essay-2026-02.jpeg",
+        src: "/assets/sw-essay-2026-02.jpeg",
         width: 745,
         height: 1054,
         alt: "2026 SW중심대학 에세이 공모전 장려상 김준호 수상작 포스터 2",
       },
       {
-        src: "assets/sw-essay-2026-03.jpeg",
+        src: "/assets/sw-essay-2026-03.jpeg",
         width: 745,
         height: 1054,
         alt: "2026 SW중심대학 에세이 공모전 장려상 김준호 수상작 포스터 3",
@@ -38,13 +38,13 @@ window.POSTERS = [
     author: "김준호",
     images: [
       {
-        src: "assets/sw-essay-2025-01.jpeg",
+        src: "/assets/sw-essay-2025-01.jpeg",
         width: 2245,
         height: 3179,
         alt: "2025 소중한 배움, 큰 변화 에세이 공모전 최우수상 김준호 수상작 포스터 1",
       },
       {
-        src: "assets/sw-essay-2025-02.jpeg",
+        src: "/assets/sw-essay-2025-02.jpeg",
         width: 2245,
         height: 3179,
         alt: "2025 소중한 배움, 큰 변화 에세이 공모전 최우수상 김준호 수상작 포스터 2",
@@ -62,7 +62,7 @@ window.POSTERS = [
     author: "김준호",
     images: [
       {
-        src: "assets/scival-research-trends-2025.jpeg",
+        src: "/assets/scival-research-trends-2025.jpeg",
         width: 1190,
         height: 1683,
         alt: "2025-1 인하인 연구력 향상을 위한 연구동향분석 포스터 경진대회 김준호 포스터",
