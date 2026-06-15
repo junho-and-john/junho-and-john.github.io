@@ -51,4 +51,22 @@ window.POSTERS = [
       },
     ],
   },
+  {
+    id: "scival-research-trends-2025",
+    title: "2025-1 인하인 연구력 향상을 위한 연구동향분석 포스터 경진대회 with SciVal",
+    award: "",
+    awardTitle: "",
+    organizer: "대학혁신지원사업 & 인하대학교 정석학술정보관",
+    awardDate: "2025. 5. 23.",
+    dateLabel: "일자",
+    author: "김준호",
+    images: [
+      {
+        src: "assets/scival-research-trends-2025.jpeg",
+        width: 1190,
+        height: 1683,
+        alt: "2025-1 인하인 연구력 향상을 위한 연구동향분석 포스터 경진대회 김준호 포스터",
+      },
+    ],
+  },
 ];

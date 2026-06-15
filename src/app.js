@@ -10,6 +10,8 @@
   function App() {
     const [activePoster, setActivePoster] = useState(getPosterFromHash);
     const activeImages = activePoster ? activePoster.images || [] : [];
+    const listMeta = (poster) =>
+      `${poster.award || "참가"} · ${poster.awardDate}`;
 
     useEffect(() => {
       function syncFromHash() {
@@ -47,10 +49,10 @@
       ),
       React.createElement(
         "section",
-        { className: "workspace", "aria-label": "수상작 포스터" },
+        { className: "workspace", "aria-label": "포스터 게시물" },
         React.createElement(
           "aside",
-          { className: "poster-list", "aria-label": "포스터 목록" },
+          { className: "poster-list", "aria-label": "게시물 목록" },
           posters.map((poster, index) =>
             React.createElement(
               "button",
@@ -73,7 +75,7 @@
                 "span",
                 { className: "poster-item-copy" },
                 React.createElement("strong", null, poster.title),
-                React.createElement("span", null, `${poster.award} · ${poster.awardDate}`),
+                React.createElement("span", null, listMeta(poster)),
               ),
             ),
           ),
@@ -92,8 +94,10 @@
                 "dl",
                 { className: "post-details" },
                 React.createElement("div", null, React.createElement("dt", null, "주관"), React.createElement("dd", null, activePoster.organizer)),
-                React.createElement("div", null, React.createElement("dt", null, "상훈"), React.createElement("dd", null, `${activePoster.award} (${activePoster.awardTitle})`)),
-                React.createElement("div", null, React.createElement("dt", null, "수상일"), React.createElement("dd", null, activePoster.awardDate)),
+                activePoster.award
+                  ? React.createElement("div", null, React.createElement("dt", null, "상훈"), React.createElement("dd", null, `${activePoster.award} (${activePoster.awardTitle})`))
+                  : null,
+                React.createElement("div", null, React.createElement("dt", null, activePoster.dateLabel || "수상일"), React.createElement("dd", null, activePoster.awardDate)),
               ),
             ),
           ),
