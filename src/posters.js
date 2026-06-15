@@ -29,7 +29,7 @@ window.POSTERS = [
     ],
   },
   {
-    id: "valuable-learning-2025",
+    id: "sw-essay-2025",
     title: "2025 '소중한 배움, 큰 변화' 에세이 공모전",
     award: "최우수상",
     awardTitle: "SW중심대학사업단장상",
@@ -38,13 +38,13 @@ window.POSTERS = [
     author: "김준호",
     images: [
       {
-        src: "assets/valuable-learning-2025-01.jpeg",
+        src: "assets/sw-essay-2025-01.jpeg",
         width: 2245,
         height: 3179,
         alt: "2025 소중한 배움, 큰 변화 에세이 공모전 최우수상 김준호 수상작 포스터 1",
       },
       {
-        src: "assets/valuable-learning-2025-02.jpeg",
+        src: "assets/sw-essay-2025-02.jpeg",
         width: 2245,
         height: 3179,
         alt: "2025 소중한 배움, 큰 변화 에세이 공모전 최우수상 김준호 수상작 포스터 2",
