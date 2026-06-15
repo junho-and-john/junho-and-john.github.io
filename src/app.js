@@ -92,14 +92,9 @@
                 "dl",
                 { className: "post-details" },
                 React.createElement("div", null, React.createElement("dt", null, "주관"), React.createElement("dd", null, activePoster.organizer)),
-                React.createElement("div", null, React.createElement("dt", null, "상훈"), React.createElement("dd", null, activePoster.awardTitle)),
+                React.createElement("div", null, React.createElement("dt", null, "상훈"), React.createElement("dd", null, `${activePoster.award} (${activePoster.awardTitle})`)),
                 React.createElement("div", null, React.createElement("dt", null, "수상일"), React.createElement("dd", null, activePoster.awardDate)),
               ),
-            ),
-            React.createElement(
-              "div",
-              { className: "award-summary" },
-              React.createElement("strong", null, activePoster.award),
             ),
           ),
           React.createElement(
