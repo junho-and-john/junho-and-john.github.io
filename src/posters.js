@@ -70,6 +70,24 @@ window.POSTERS = [
     }),
   },
   {
+    id: "carbon-neutral-team-ia-2025",
+    title: "탄소중립 INNOVATION ACADEMY 4기 팀 프로젝트",
+    award: "우수상",
+    awardTitle: "SW중심대학사업단장상",
+    organizer: "인하대학교 SW중심대학사업단",
+    awardDate: "2025. 6. 23.",
+    author: "김준호",
+    images: Array.from({ length: 15 }, (_, index) => {
+      const page = String(index + 1).padStart(2, "0");
+      return {
+        src: `/assets/carbon-neutral-team-ia-2025-${page}.jpg`,
+        width: 3200,
+        height: 1800,
+        alt: `탄소중립 INNOVATION ACADEMY 4기 팀 프로젝트 최종발표 슬라이드 ${index + 1}`,
+      };
+    }),
+  },
+  {
     id: "scival-research-trends-2025",
     title: "2025-1 인하인 연구력 향상을 위한 연구동향분석 포스터 경진대회 with SciVal",
     award: "",
